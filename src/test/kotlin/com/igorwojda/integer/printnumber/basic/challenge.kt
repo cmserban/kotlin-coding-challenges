@@ -4,7 +4,13 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun printNumber(n: Int): List<Int> {
-    TODO("not implemented")
+
+    return when (n) {
+        0 -> emptyList()
+        else -> (n downTo 1).toList()
+    }
+
+
 }
 
 class RecursivePrintNumber {

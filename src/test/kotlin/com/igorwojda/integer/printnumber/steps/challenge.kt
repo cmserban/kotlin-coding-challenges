@@ -2,9 +2,14 @@ package com.igorwojda.integer.printnumber.steps
 
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
+import java.util.stream.Collectors.toList
 
 private fun printNumber(n: Int, step: Int = 1): List<Int> {
-    TODO("not implemented")
+    return when(n)
+    {
+        0-> emptyList()
+        else -> (n downTo 1 step step).toList()
+    }
 }
 
 class RecursivePrintNumberWithSteps {

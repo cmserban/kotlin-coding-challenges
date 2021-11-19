@@ -4,7 +4,8 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun decapitalizeConst(str: String): String {
-    TODO("not implemented")
+    val subStr= str.split("_").map { it.toLowerCase().capitalize() }
+    return subStr.joinToString ("").decapitalize()
 }
 
 private class Test {
