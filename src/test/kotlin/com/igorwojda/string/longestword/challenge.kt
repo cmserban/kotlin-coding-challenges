@@ -10,6 +10,7 @@ private fun longestWord(str: String): String {
         .split(" ")
         .filterNot { it.isBlank() }
         .maxByOrNull { it.length } ?:""
+
 }
 
 private class Test {

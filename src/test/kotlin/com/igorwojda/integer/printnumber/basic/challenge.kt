@@ -9,8 +9,6 @@ private fun printNumber(n: Int): List<Int> {
         0 -> emptyList()
         else -> (n downTo 1).toList()
     }
-
-
 }
 
 class RecursivePrintNumber {
